@@ -1,0 +1,255 @@
+.homepage {
+    margin: 0;
+}
+.homepage .header,
+.kitchenware .header,
+.bathroomware .header,
+.aboutpage .header,
+.contactpage .header,
+.dashboard .header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.homepage .header .logo,
+.kitchenware .header .logo,
+.bathroomware .header .logo,
+.aboutpage .header .logo,
+.contactpage .header .logo,
+.dashboard .header .logo {
+    color: black;
+    font-size: large;
+}
+.homepage .header .logo .red,
+.kitchenware .header .logo .red,
+.bathroomware .header .logo .red,
+.aboutpage .header .logo .red,
+.contactpage .header .logo .red,
+.dashboard .header .logo .red {
+    color: #FF033E;
+}
+.homepage .header .navigation,
+.kitchenware .header .navigation,
+.bathroomware .header .navigation,
+.aboutpage .header .navigation,
+.contactpage .header .navigation,
+.dashboard .header .navigation {
+    align-items: center;
+    width: 70%;
+}
+.homepage .header .navbar .search-box,
+.kitchenware .header .navbar .search-box,
+.bathroomware .header .navbar .search-box,
+.aboutpage .header .navbar .search-box,
+.contactpage .header .navbar .search-box,
+.dashboard .header .navbar .search-box {
+    border-radius: 20px;
+    width: 100%;
+}
+.homepage .header .navbar .search-arrow,
+.kitchenware .header .navbar .search-arrow,
+.bathroomware .header .navbar .search-arrow,
+.aboutpage .header .navbar .search-arrow,
+.contactpage .header .navbar .search-arrow,
+.dashboard .header .navbar .search-arrow {
+    width: 30px;
+    height: 33px;
+}
+.homepage .header .navbar .btn,
+.kitchenware .header .navbar .btn,
+.bathroomware .header .navbar .btn,
+.aboutpage .header .navbar .btn,
+.contactpage .header .navbar .btn,
+.dashboard .header .navbar .btn {
+    border-radius: 30px;
+}
+.homepage .header .navbar .btn:hover,
+.kitchenware .header .navbar .btn:hover,
+.bathroomware .header .navbar .btn:hover,
+.aboutpage .header .navbar .btn:hover,
+.contactpage .header .navbar .btn:hover,
+.dashboard .header .navbar .btn:hover {
+    background-color:cadetblue;
+}
+.homepage .content .carousel-img {
+    height: 250px;
+    width: 1600px;
+}
+.homepage .content .topic {
+    margin-left: 50px;
+}
+.homepage .content .carouselband {
+    display: flex;
+}
+.homepage .content .carouselband .carousel {
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+}
+.homepage .content .carouselband .carousel .carousel-img {
+    height: 120px;
+    border-radius: 3px;
+}
+.homepage .content .explore {
+    border-style: none;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+.homepage .content .explore img {
+    width: 22px;
+    height: 20px;
+}
+.homepage .content .imgcollection {
+    width: 500px;
+    height: 500px;
+}
+.homepage .myslides {
+    display: none;
+}
+.homepage .content .wrap {
+    width: 80%;
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.homepage .content .wrap .brands {
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    margin-top: 15px;
+}
+.homepage .content .holder {
+    background-color: rgba(4, 59, 92, 0.7);
+    width: 100%;
+    height:650px;
+    display: flex;
+    align-items: center;
+}
+.homepage .content .holder .img-psn {
+    height: 650px;
+}
+.homepage .content .bg {
+    background-color: rgba(4, 59, 92, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
+    align-items: center; /* Horizontally center the text */
+    height: 100%;
+    text-align: center; /* Center align the text content */
+
+}
+.homepage .footer .lined,
+.kitchenware .footer .lined,
+.bathroomware .footer .lined,
+.aboutpage .footer .lined,
+.contactpage .footer .lined,
+.dashboard .footer .lined {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #FF033E;
+}
+.homepage .footer .social img,
+.kitchenware .footer .social img,
+.bathroomware .footer .social img,
+.kitchenware .footer .social img,
+.aboutpage .footer .social img,
+.contactpage .footer .social img,
+.dashboard .footer .social img {
+    width: 30px;
+    height: 30px;
+}
+.homepage .footer .alignment,
+.kitchenware .footer .alignment,
+.bathroomware .footer .alignment,
+.aboutpage .footer .alignment,
+.contactpage .footer .alignment,
+.dashboard .footer .alignment {
+    align-items: center;
+}
+.kitchenware,
+.bathroomware,
+.aboutpage,
+.contactpage,
+.dashboard {
+    margin: 0;
+    padding: 0;
+}
+.kitchenware .content .sidepanel,
+.bathroomware .content .sidepanel {
+    background-color: #4169E1;
+    width: 146px;
+    min-width: 146px;
+    padding: 5px;
+}
+.kitchenware .content .sidepanel a:link,
+.bathroomware .content .sidepanel a:link,
+.homepage .footer .right a:link,
+.contactpage .footer .right a:link,
+.aboutpage .footer .right a:link,
+.bathroomware .footer .right a:link,
+.kitchenware .footer .right a:link,
+.dashboard .footer .right a:link {
+    text-decoration: none;
+}
+.kitchenware .content .sidepanel a:hover,
+.bathroomware .content .sidepanel a:hover {
+    color: darkblue;
+}
+.kitchenware .content .sidepanel .side-link,
+.bathroomware .content .sidepanel .side-link {
+    display: flex;
+    align-items: center;
+}
+.kitchenware .content .sidepanel .side-link img,
+.bathroomware .content .sidepanel .side-link img {
+    width: 15px;
+}
+.kitchenware .content .kitchencarousel .carousel-img,
+.bathroomware .content .kitchencarousel .carousel-img {
+    max-width: 1400px;
+    height: 150px;
+}
+.aboutpage {
+    background-image: url("/page-images/kitchen-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.aboutpage .content,
+.contactpage .content {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+.aboutpage .content .bg,
+.contactpage .content .bg {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 70%;
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px;
+}
+.contactpage {
+    background-image: url("/page-images/phonecall-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contactpage .content .bg .socials .section {
+    margin-bottom: 15px;
+}
+.contactpage .content .bg .socials .section img {
+    height: 45px;
+    margin-right: 15px;
+}
+.dashboard .content .accordion .accordion-body .product-img {
+    width: 30px;
+    height: 30px;
+}
+.dashboard .content .accordion .accordion-body .modify,
+.dashboard .content .product-view .modify {
+    width: 25px;
+    height: 25px;
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Dashboard</title>
+  </head>
+  <body class="dashboard">
+    <div class="header navbar navbar-expand-lg navbar-dark">
+      <div class="logo p-2 pt-2 ms-3">
+        <div class="navbar-brand border-end border-primary border-3 pe-4">
+          <a href="/code/index.html" class="text-decoration-none text-white">
+            <p>
+              Kitchens <br />
+              <span class="red">&</span> <br />
+              Bathrooms
+            </p>
+          </a>
+        </div>
+      </div>
+      <button
+        class="navbar-toggler border border-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navigation p-3 justify-content-evenly">
+          <li class="nav-item">
+            <a
+              class="nav-link link-light"
+              aria-current="page"
+              href="/code/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle link-light"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Products</a
+            >
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <a class="dropdown-item" href="/code/kitchenware.html"
+                  >Kitchen Products</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="/code/bathroomware.html"
+                  >Bathroom Products</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="/code/aboutpage.html"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light" href="/code/contactpage.html"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-warning" href="/code/aboutpage.html"
+              >Dashboard</a
+            >
+          </li>
+        </ul>
+      </div>
+      <nav class="navbar navbar-light">
+        <div class="container-fluid justify-content-center">
+          <form class="d-flex me-4">
+            <input
+              class="form-control me-2 search-box border-secondary"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light btn-bg" type="submit">
+              <img
+                src="/page-images/right-arrow-white.png"
+                alt=""
+                class="search-arrow"
+              />
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="content d-md-flex">
+        <div class="w-100 w-md-50">
+          <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Kitchen Items
+                      </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="mb-2">
+                          <button class="rounded  border-warning">Add category <img src="/page-images/add-icon.png" alt="" class="modify"></button>
+                          <button class="rounded  border-warning">Edit category <img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                          <button class="rounded border-danger">Delete category <img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                        </div>
+                          <div class="accordion" id="sub-accordionExample">
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header" id="sub-headingOne">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sub-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          Category #1
+                                      </button>
+                                  </h2>
+                                  <div id="sub-collapseOne" class="accordion-collapse collapse show" aria-labelledby="sub-headingOne" data-bs-parent="#sub-accordionExample">
+
+                                    <button class="rounded  border-warning ms-3 mt-2">Add product <img src="/page-images/add-icon.png" alt="" class="modify"></button>
+
+                                      <div class="accordion-body d-flex flex-column align-items-center">
+                                          <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                              <img src="" alt=""  class="product-img me-3">
+                                              <p class="me-3 mt-auto mb-auto">Product X</p>
+                                              <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                              <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                          </div>
+                                          <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                              <img src="" alt="" class="product-img me-3">
+                                              <p class="me-3 mt-auto mb-auto">Product Y</p>
+                                              <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                              <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                          </div>
+                                          <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                            <img src="" alt=""  class="product-img me-3">
+                                            <p class="me-3 mt-auto mb-auto">Product Z</p>
+                                            <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                            <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header" id="sub-headingTwo">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sub-collapseTwo" aria-expanded="false" aria-controls="sub-collapseTwo">
+                                          Category #2
+                                      </button>
+                                  </h2>
+                                  <div id="sub-collapseTwo" class="accordion-collapse collapse" aria-labelledby="sub-headingTwo" data-bs-parent="#sub-accordionExample">
+
+                                    <button class="rounded  border-warning ms-3 mt-2">Add product <img src="/page-images/add-icon.png" alt="" class="modify"></button>
+
+                                    <div class="accordion-body d-flex flex-column align-items-center">
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                          <img src="" alt=""  class="product-img me-3">
+                                          <p class="me-3 mt-auto mb-auto">Product X</p>
+                                          <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                          <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                      </div>
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                          <img src="" alt="" class="product-img me-3">
+                                          <p class="me-3 mt-auto mb-auto">Product Y</p>
+                                          <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                          <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                      </div>
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                        <img src="" alt=""  class="product-img me-3">
+                                        <p class="me-3 mt-auto mb-auto">Product Z</p>
+                                        <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                        <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                    </div>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          
+              </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          Bathroom Items
+                      </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="mb-2">
+                          <button class="rounded  border-warning">Add category <img src="/page-images/add-icon.png" alt="" class="modify"></button>
+                          <button class="rounded  border-warning">Edit category <img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                          <button class="rounded border-danger">Delete category <img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                        </div>
+                          <div class="accordion" id="sub-accordionExample">
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header" id="sub-headingOne">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sub-collapse1" aria-expanded="true" aria-controls="collapseTwo">
+                                          Category #1
+                                      </button>
+                                  </h2>
+                                  <div id="sub-collapse1" class="accordion-collapse collapse show" aria-labelledby="sub-headingOne" data-bs-parent="#sub-accordionExample">
+
+                                    <button class="rounded  border-warning ms-3 mt-2">Add product <img src="/page-images/add-icon.png" alt="" class="modify"></button>
+
+                                    <div class="accordion-body d-flex flex-column align-items-center">
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                          <img src="" alt=""  class="product-img me-3">
+                                          <p class="me-3 mt-auto mb-auto">Product X</p>
+                                          <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                          <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                      </div>
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                          <img src="" alt="" class="product-img me-3">
+                                          <p class="me-3 mt-auto mb-auto">Product Y</p>
+                                          <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                          <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                      </div>
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                        <img src="" alt=""  class="product-img me-3">
+                                        <p class="me-3 mt-auto mb-auto">Product Z</p>
+                                        <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                        <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                    </div>
+                                  </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header" id="sub-headingTwo">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sub-collapse2" aria-expanded="false" aria-controls="sub-collapseTwo">
+                                          Category #2
+                                      </button>
+                                  </h2>
+                                  <div id="sub-collapse2" class="accordion-collapse collapse" aria-labelledby="sub-headingTwo" data-bs-parent="#sub-accordionExample">
+
+                                    <button class="rounded  border-warning ms-3 mt-2">Add product <img src="/page-images/add-icon.png" alt="" class="modify"></button>
+
+                                    <div class="accordion-body d-flex flex-column align-items-center">
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                          <img src="" alt=""  class="product-img me-3">
+                                          <p class="me-3 mt-auto mb-auto">Product X</p>
+                                          <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                          <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                      </div>
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                          <img src="" alt="" class="product-img me-3">
+                                          <p class="me-3 mt-auto mb-auto">Product Y</p>
+                                          <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                          <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                      </div>
+                                      <div class="product rounded-pill d-flex align-items-center bg-info-subtle border border-info bg-gradient justify-content-center w-md-50 p-2 mb-2">
+                                        <img src="" alt=""  class="product-img me-3">
+                                        <p class="me-3 mt-auto mb-auto">Product Z</p>
+                                        <button class="rounded bg-light me-3 border-warning"><img src="/page-images/edit-icon.png" alt="" class="modify"></button>
+                                        <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+                                    </div>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          
+              </div>
+          </div>
+        </div>
+        <div class="product-view w-md-50 w-100 p-3">
+          <button class="rounded bg-danger-subtle me-3 border-danger"><img src="/page-images/delete-icon.png" alt="" class="modify"></button>
+          <img src="" alt="">
+          <div class="details d-flex flex-column">
+            <label for="">Model no. :</label>
+            <label for="">Material :</label>
+            <label for="">Size/dimensions :</label>
+          </div>
+          <div>
+            <button class="border-warning rounded">Save changes</button>
+            <button class="border-danger rounded">Cancel</button>
+          </div>
+        </div>
+    </div>
+
+    <div
+      class="footer bg-dark bg-gradient text-white ps-3 pt-3 d-flex flex-wrap row align-items-start w-100"
+    >
+      <div class="left col">
+        <p class="lined">We're located at:</p>
+        <p>Lumumba Road, Mombasa</p>
+        <p>Beside Kona Motors</p>
+        <p>P.O.BOX 16520-80100</p>
+      </div>
+      <div class="center col">
+        <p class="lined">Reach out via:</p>
+        <div class="social d-flex alignment">
+          <a
+            href="https://www.instagram.com/kitchensandbathroomstiles?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          >
+            <img src="/page-images/instagram-logo2.png" alt="" class="me-4" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@kitchensnbathrooms.tiles?is_from_webapp=1&sender_device=pc"
+            ><img src="/page-images/tik-tok.png" alt="" class="me-4"
+          /></a>
+          <a href="mailto: k.bathrooms@gmail.com"
+            ><img src="/page-images/gmail.png" alt=""
+          /></a>
+        </div>
+        <div class="social d-flex pt-3">
+          <img src="/page-images/phone-call.png" alt="" class="me-2" />
+          <p>+254 725 800429</p>
+        </div>
+        <p>© Kitchens & Bathrooms 2024</p>
+      </div>
+      <div class="right col">
+        <p><a href="/code/contactpage.html#FAQ">FAQ</a></p>
+        <p><a href="/code/aboutpage.html">About</a></p>
+        <p><a href="/code/contactpage.html">Contact Us</a></p>
+        <p>
+          Redesigned by <a href="https://ochino24.github.io/">Frank Ochino</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
